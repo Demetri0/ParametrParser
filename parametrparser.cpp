@@ -36,5 +36,7 @@ bool ParametrParser::exec()
         _shortCallback[key](ret);
     }catch( std::bad_function_call ){
         std::cout << "So fucking gay!" << std::endl;
+        return false;
     }
+    return true;
 }
